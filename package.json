@@ -1,0 +1,26 @@
+{
+  "name": "decoda",
+  "version": "0.1.0",
+  "description": "Dead simple CSV / configuration decoder for Node.js and browsers",
+  "private": true,
+  "scripts": {
+    "test": "npm run build && node tests/decoda.js",
+    "typings": "tsc -p . -d --declarationDir lib --emitDeclarationOnly",
+    "build": "npm run typings && rollup -c"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "types": "lib/decoda.d.ts",
+  "keywords": [],
+  "author": "lettenj61 <lettenj61@users.noreply.github.com>",
+  "license": "(CC0-1.0 OR MIT OR Apache-2.0)",
+  "devDependencies": {
+    "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",
+    "@rollup/plugin-typescript": "^6.0.0",
+    "rollup": "^2.27.0",
+    "typescript": "^4.0.2",
+    "zora": "^4.0.0"
+  }
+}
